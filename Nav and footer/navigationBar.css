@@ -1,0 +1,90 @@
+
+.NavigationBar {
+    background-color: white;
+    height: 100px;
+    margin: 0px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  nav img {
+    width: 90px;
+    height: 75px;
+    padding-left: 15px;
+  }
+  
+  .nav-bar ul li {
+    list-style: none;
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 1s;
+    padding: 20px;
+  }
+  
+  .nav-bar ul li a {
+    text-decoration: none;
+    font-size: 28px;
+    color: #8a8a8a;
+    transition: color 1s;
+  }
+  
+  .nav-bar ul li:hover {
+    border-bottom: 2px solid black;
+  }
+  
+  .nav-bar ul li a:hover {
+    color: black;
+  }
+  
+
+/*for tablet screens 600px and above*/
+ 
+@media screen and (max-width:768px) {
+
+  .nav-bar ul li a{
+      font-size: 20px;
+      
+  }
+}
+/* for large phones 375px and above */
+@media screen and (max-width:600px) {
+  
+  .nav-bar ul li a{
+      font-size: 18px;
+      
+  }
+
+  .nav-bar ul li{
+      padding: 10px;
+  }
+
+ nav img{
+      width: 75px;
+      height: 65px;
+  }
+}
+/*for smaller phones up to 375px*/
+@media screen and (max-width:375px){
+  nav{
+      display: block;
+      text-align: center;
+  }
+  nav img{
+    width: 60px;
+    height: 45px;
+  }
+
+  .nav-bar ul li a{
+      font-size: 13px;
+      
+  }
+  .nav-bar ul li{
+      padding: 10px;
+  }
+    
+}

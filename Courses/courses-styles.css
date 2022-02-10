@@ -1,0 +1,519 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.NavigationBar {
+    background-color: white;
+    height: 100px;
+    margin: 0px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+nav img {
+    width: 95px;
+    height: 80px;
+    padding-left: 15px;
+}
+
+.nav-bar ul li {
+    list-style: none;
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 1s;
+    padding: 20px;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    font-size: 28px;
+    color: #8a8a8a;
+    transition: color 1s;
+}
+
+.nav-bar ul li:hover {
+    border-bottom: 2px solid black;
+}
+
+.nav-bar ul li a:hover {
+    color: black;
+}
+
+
+/***************************** MAIN PAGE ***********************************/
+
+.main-content{
+    position: relative;
+    background-image: /*linear-gradient(rgba(4, 9, 30, 0.6), rgba(4, 9, 30, 0.6)),*/
+            url(course-images/photo1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 900px;
+    width: 100%;
+}
+
+.school-courses{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 50px;
+    padding-left: 40px;
+    border: white solid 2px;
+    width: 93%;
+    height: 700px;
+}
+
+#math .school-courses {
+    background-image: url(course-images/math-photo.jpg);
+}
+
+#csd .school-courses{
+    background-image: url(course-images/csd-photo.jpg);
+}
+
+#history .school-courses{
+    background-image: url(course-images/history-photo.jpg);
+}
+
+.school-title{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+#math .school-title{
+    color: #b3ffcc;
+}
+
+#csd .school-title{
+    color: #b3e6ff;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#history .school-title{
+    color: #ffd11a;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.general-courses-label{
+    margin-bottom: 35px;
+    font-size: 35px;
+}
+
+#math .general-courses-label{
+    color: #b3ffcc;
+}
+
+#csd .general-courses-label{
+    color: #b3e6ff;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#history .general-courses-label{
+    color: #ffd11a;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+.course-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 20%;
+    width: 48%;
+    margin-bottom: 25px;
+    padding-left: 10px;
+    border: solid 2px;
+}
+
+#math .course-content{
+    border-color: greenyellow;
+    color: #b3ffcc;
+    background: #12233a;
+}
+#math .course-content a:link{
+    color: #b3ffcc;
+}
+#math .course-content a:hover{
+    color: cadetblue;
+}
+#math .course-content a:visited{
+    color: #b3ffcc;
+}
+
+#csd .course-content{
+    border-color: #0f0f0a;
+    color: #ffff00;
+    background: #1a53ff
+}
+#csd .course-content a:link{
+    color: #ffff00;
+}
+#csd .course-content a:hover{
+    color: #0f0f0a;
+}
+#csd .course-content a:visited{
+    color: #ffff00;
+}
+
+#history .course-content{
+    border-color: #331a00;
+    color: #cc9900;
+    background: #800000;
+}
+#history .course-content a:link{
+     color: #cc9900;
+}
+#history .course-content a:hover{
+    color: #804000
+}
+#history .course-content a:visited{
+    color: #cc9900;
+}
+
+
+.course-title{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+
+.course-information{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.course-description{
+    font-size: 17px;
+    font-style: italic;
+}
+
+
+
+
+/**************************** FOOTER *****************************/
+
+/*Footer*/
+.Last_section {
+    background: linear-gradient(to right, #12233a, #12233a);
+    padding: 50px 0px 20px 0px;
+    color: white;
+  }
+  
+  .conteiner {
+    padding-right: 15px;
+    padding-left: 15px;
+    display: flex;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+  
+  .Last_section .footer-col .About_us,
+  .paraforUs,
+  .H5-Guide,
+  .PSPI,
+  .Contact,
+  .details a {
+    font-family: "Raleway", sans-serif;
+  }
+  
+  .footer-col {
+    flex-basis: 45%;
+    border-radius: 12px;
+    padding: 6px 4px;
+    margin-bottom: 20px;
+    margin-left: 8px;
+    margin-right: 5%;
+    height: 170px;
+    box-sizing: border-box;
+  }
+  
+  .footer-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0);
+  }
+  
+  .About_us {
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
+    padding: 6px;
+  }
+  .paraforUs {
+    font-size: 14px;
+    font-weight: 400;
+    width: 70%;
+    margin-left: 50px;
+    text-align: center;
+  }
+  .footer-row {
+    display: contents;
+  }
+  .Media-icons {
+    position: relative;
+    text-align: start;
+    margin-left: 18%;
+  }
+  
+  .Guide {
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    top: 20%;
+  }
+  
+  .H5-Guide {
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    margin-top: -5%;
+    padding: 10px;
+  }
+  
+  .Guide-for {
+    font-size: 17px;
+    font-weight: 400;
+    font-family: "Raleway", sans-serif;
+  }
+  
+  .For {
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+  }
+  
+  .footer-col .Contact,
+  .footer-col .details a {
+    margin-top: -2%;
+  }
+  
+  .Contact {
+    font-weight: 300;
+    margin-top: -8%;
+    font-size: 18px;
+    text-align: center;
+    padding: 15px 15px 6px 15px;
+  }
+  .details a {
+    text-align: center;
+    position: relative;
+    text-decoration-line: none;
+    color: white;
+    left: 35%;
+    font-size: 14px;
+    font-weight: 200;
+  }
+  
+  .PSPI {
+    text-align: center;
+    position: relative;
+    right: 12%;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 200;
+  }
+  .icon {
+    text-align: start;
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+  }
+  
+  .icon a {
+    color: white;
+    text-decoration-line: none;
+  }
+  @media only screen and (max-width: 1250px) {
+    * {
+      overflow-x: hidden;
+    }
+    .NavigationBar .nav-bar ul li a {
+      font-size: 20px;
+    }
+    .NavigationBar .nav-bar ul li {
+      padding-bottom: 10px;
+    }
+    .NavigationBar .nav-bar {
+      margin-top: 2%;
+    }
+    .NavigationBar {
+      margin-bottom: 5%;
+      text-align: end;
+      overflow-y: hidden;
+    }
+    .paraforUs {
+      margin-left: 10%;
+    }
+    .details a {
+      margin-left: 6%;
+    }
+    .H5-Guide{
+      margin-top: -2px;
+    }
+    .conteiner {
+      display: inline-block;
+      justify-content: space-between;
+      padding: 10px;
+      width: 100%;
+      margin-left: 10px;
+      height: fit-content;
+    }
+    .footer-col .Guide {
+      padding: 20px;
+    }
+    .Media-icons .icon {
+      text-align: center;
+      right: 12%;
+    }
+    .course-content{
+      width: 65%;
+    }
+  }
+  
+  @media only screen and (max-width: 550px) {
+    * {
+      overflow-x: hidden;
+    }
+    nav img {
+      padding: 0px;
+      width: 90px;
+    }
+    .NavigationBar .nav-bar ul li a {
+      font-size: 14px;
+      margin-bottom: 20%;
+    }
+    .NavigationBar .nav-bar ul li {
+      padding-bottom: 10px;
+    }
+    .NavigationBar .nav-bar {
+      margin-top: -4%;
+    }
+    .NavigationBar {
+      margin-bottom: 5%;
+      text-align: end;
+      overflow-y: hidden;
+    }
+    .main-content {
+      height: fit-content;
+    }
+    .details a {
+      margin-left: 2%;
+    }
+    .conteiner {
+      display: inline-block;
+      justify-content: space-between;
+      padding: 10px;
+      width: 100%;
+      margin-left: 10px;
+      height: fit-content;
+    }
+    .footer-col .Guide {
+      padding: 20px;
+    }
+    .course-information{
+      flex-direction: column;
+  }
+
+  .school-courses{
+      padding: 30px;
+  }
+
+  .school-title{
+      font-size: 40px;
+  }
+
+  .general-courses-label{
+      font-size: 33px;
+  }
+
+  .course-content{
+      width: 80%;
+  }
+
+  .course-title{
+      font-size: 25px;
+  }
+
+  .course-information{
+      font-size: 18px;
+  }
+
+  .course-description{
+      font-size: 15px;
+  }
+    
+  }
+  
+  @media only screen and (max-width: 375px) {
+
+    nav{
+      display: block;
+      text-align: start;
+      white-space: nowrap;
+      padding: 5px 0px 5px 0px;
+      font-size: 13px;
+      margin-bottom: 2%;
+      height: fit-content;
+    }
+    .nav-bar ul li {
+      padding: 25px 10px 20px 10px;
+      margin-right: 4%;
+    }
+  
+    nav img{
+      width: 50px;
+      height: 50px;
+      transform: translateX(-320%);
+
+    }
+  
+  
+    .details a{
+      left: 65px;
+    }
+    .school-courses{
+      padding: 20px;
+  }
+
+  .school-title{
+      font-size: 30px;
+  }
+
+  .general-courses-label{
+      font-size: 26px;
+  }
+
+  .course-content{
+      width: 100%;
+  }
+
+  .course-title{
+      font-size: 20px;
+  }
+
+  .course-information{
+      font-size: 15px;
+  }
+
+  .course-description{
+      font-size: 13px;
+  }
+  }

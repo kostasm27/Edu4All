@@ -1,0 +1,1 @@
+Όλα είναι scrollable, και γι'αυτό το footer section δεν εμαφανίζεται πλήρως στα screenshot. 

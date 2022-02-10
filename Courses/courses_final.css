@@ -1,0 +1,334 @@
+*{
+
+    margin: 0;
+    padding: 0;
+      
+}
+
+.Course{
+    height:max-content;
+    width: 100%;
+    background-image:url(images/photo2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    box-shadow: inset 0px  2.5px  5px  black;
+}
+
+.main-content{ 
+    position: relative;
+    height: max-content;
+    width: 80%;
+    margin:10% auto;
+    background-color: rgb(231, 231, 231);
+    box-shadow: 0px 0px 10px  black  ;
+    display: grid;
+    grid-template-columns: 1.25fr 0.75fr;
+    
+
+}
+.course-content{
+    display:block;
+    text-align: start;
+    padding: 25px ;
+}
+
+.introduction , .learning , .requirements , .bibliography{
+    padding: 25px 0;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px black;
+    margin: 25px 0;
+}
+
+.introduction h1 ,.learning h1 , .requirements h1 ,.bibliography h1{
+    color: rgb(3, 3, 65);
+    padding: 10px;
+    font-size: 25px;
+    font-family: "Lato", sans-serif;
+}
+
+.introduction p ,.requirements p  {
+    text-align: start;
+    padding: 10px 20px;
+    font-family: "Lato", sans-serif;
+} 
+
+.learn-info{
+    padding-left: 50px;
+}
+
+
+.bibliography > a{
+    padding-left: 50px;
+    padding-top: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.5s;
+    text-align: center;
+}
+.bibliography a:hover{
+    color: black;
+}
+
+.other-content{
+    display: block;
+    
+}
+.classer{
+    height: 300px;
+    width: 80%;
+    margin: 20% auto;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px black;
+    
+}
+.classer img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.footer{
+    position: relative;
+    text-align: center;
+    padding: 25px;
+    
+      
+}
+.footer-par{
+    color: black;
+    font-size: 25px;
+    font-family: "Lato", sans-serif;
+    
+}
+
+/*for laptop screens  up to 1440px*/
+
+@media screen and (max-width:1440px)  {
+    .learn-info{
+        padding-left: 30px;
+    }
+    .classer{
+        
+        margin:20% auto;
+    }
+}
+
+
+/*for laptop screens  up to 1024px*/
+
+@media screen and (max-width:1024px)  {
+
+    .main-content{ 
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-gap: 10px;
+    }
+
+    .course-content{
+        padding: 30px ;
+    }
+
+    .introduction , .learning , .requirements , .bibliography{
+        padding: 20px 0;      
+        margin: 20px 0;
+    }
+
+    .introduction h1 ,.learning h1 , .requirements h1 ,.bibliography h1{
+        font-size: 25px;
+    }
+
+    .introduction p ,.requirements p  {
+       
+        font-size: 17.5px;
+    } 
+    .learn-info li{
+        font-size: 17.5px;
+    }
+
+    .bibliography > a{
+        padding-left: 25px;
+        padding-top: 20px;
+        font-size: 20px;
+        
+    }
+    .classer{
+        width: 60%;
+        margin:10% auto;
+    }
+
+    .footer-par{
+        font-size: 25px;
+    }
+
+}
+
+/*for tablet screens 600px and above*/
+
+@media screen and (max-width:768px)  {
+
+    .main-content{ 
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-gap: 10px;
+    }
+
+    .course-content{
+        padding: 30px ;
+    }
+
+    .introduction , .learning , .requirements , .bibliography{
+        padding: 20px 0;      
+        margin: 20px 0;
+    }
+
+    .introduction h1 ,.learning h1 , .requirements h1 ,.bibliography h1{
+        font-size: 20px;
+    }
+
+    .introduction p ,.requirements p  {
+       
+        font-size: 15px;
+    } 
+    .learn-info li{
+        font-size: 15px;
+    }
+
+    .bibliography > a{
+        padding-left: 25px;
+        padding-top: 20px;
+        font-size: 17.5px;
+        
+    }
+    .classer{
+        margin:10% auto;
+    }
+
+    .footer-par{
+        font-size: 20px;
+    }
+
+}
+
+/* for large phones 375px and above*/
+
+@media screen and (max-width:600px)  {
+    
+    .main-content{ 
+        width: 100%;
+        margin:15% auto;
+        display: grid;
+        grid-template-columns: 1fr; 
+        box-shadow: 0px 0px 5px   black  ;  
+    }
+
+    .course-content{
+        padding: 15px ;
+    }
+
+    .introduction , .learning , .requirements , .bibliography{
+        padding: 15px 0;      
+        margin: 15px 0;
+    }
+
+    .introduction h1 ,.learning h1 , .requirements h1 ,.bibliography h1{
+        font-size: 17.5px;
+    }
+
+    .introduction p ,.requirements p  {
+       
+        font-size: 14px;
+    } 
+
+    .learn-info{
+        padding-left: 30px;
+    }
+
+    .learn-info li{
+        font-size: 14px;
+    }
+
+    .bibliography > a{
+       
+        padding-top: 15px;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .classer{
+        margin:10% auto;
+        width: 80%;
+        height: 200px;
+    }
+
+
+    .footer-par{
+        font-size: 20px;
+    }
+}
+
+/*for smaller phones up to 375px*/
+
+@media screen and (max-width:375px)  {
+    
+    .main-content{ 
+        margin:20% auto;
+    }
+
+    .course-content{
+        padding: 25px ;
+    }
+
+    .introduction , .learning , .requirements , .bibliography{
+        padding: 20px 0;
+    }
+
+    .introduction h1 ,.learning h1 , .requirements h1 ,.bibliography h1{
+        font-size: 15px;
+    }
+
+    .introduction p ,.requirements p  {
+       
+        font-size: 12.5px;
+    } 
+    .learn-info{
+        padding-left: 25px;
+    }
+
+    .learn-info li{
+        font-size: 12.5px;
+    }
+
+    .bibliography > a{
+       
+        padding-top: 10px;
+        font-size: 14px;
+    }
+
+    .classer{
+        display: none;
+    }
+
+    .footer-par{
+        font-size: 17.5px;
+    }
+
+}
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+

@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lato;
+}
+
+
+
+.main-content{
+    height: max-content;
+    width: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(6, 19, 63, 0.5));
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    transition:0.5s;
+    box-shadow: inset 0px  2.5px  5px  black; 
+}
+
+.school-courses{
+    position: relative;
+    width: 70%;
+    height: max-content;  
+    margin: 10% auto; 
+    border: black solid 2px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px  black  ;
+    background: whitesmoke;
+    padding: 20px ;
+    
+}
+
+
+.school-title{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.school-title p{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.courses-label{
+    margin:20px 0;
+}
+
+.courses-label p{
+    font-size: 30px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+.course-content{
+    position: relative;
+    width: 60%;
+    height: max-content;
+    border: 2px solid grey;
+    border-radius: 10px;
+    margin: 2.5% 0;
+    padding: 0 15px;    
+}
+
+.course-name{
+    margin: 20px 0;
+}
+.course-name a {
+    text-decoration: none;
+}
+
+.course-name p {
+    font-size: 40px;
+}
+
+.course-description{
+    font-size: 20px;   
+}
+
+.footer{
+    position: relative;
+    text-align: center;
+    padding: 25px;     
+}
+.footer-par{
+    color: white;
+    font-size: 25px;
+    font-family: "Lato", sans-serif;
+}
+
+
+/*for tablet screens 600px and above*/
+ 
+@media screen and (max-width:768px) {
+    
+    .school-courses{
+        width: 80%;
+        margin: 12.5% auto;   
+    }
+
+    .school-title p{
+        font-size: 30px;
+    }
+
+    .courses-label p{
+        font-size: 20px;
+
+    }
+
+    .course-content{
+        width: 70%;
+        margin: 5% 0;       
+    }
+
+    .course-name p {
+        font-size: 20px;
+    }
+
+    .course-description{
+        font-size: 15px;   
+    }
+
+    .footer-par{
+        font-size: 20px;
+    }
+     
+}
+/* for large phones 375px and above */
+@media screen and (max-width:600px) {
+    .school-courses{
+        width: 90%;
+        margin: 15% auto;   
+    }
+
+    .school-title p{
+        font-size: 20px;
+    }
+
+    .courses-label p{
+        font-size: 15px;
+
+    }
+
+    .course-content{
+        width: 100%;
+        margin: 5% 0;       
+    }
+
+    .course-name p {
+        font-size: 15px;
+    }
+
+    .course-description{
+        font-size: 12.5px;   
+    }
+
+    .footer-par{
+        font-size: 20px;
+    }
+    
+
+}
+/*for smaller phones up to 375px*/
+@media screen and (max-width:375px){
+    
+    .school-courses{
+        width: 100%;
+        margin: 20% auto;   
+    }
+
+    .school-title p{
+        font-size: 17.5px;
+    }
+
+    .courses-label p{
+        font-size: 15px;
+
+    }
+
+    .course-content{
+        width: 100%;
+        margin: 5% 0;       
+    }
+
+    .course-name p {
+        font-size: 15px;
+    }
+
+    .course-description{
+        font-size: 12.5px;   
+    }
+
+    .footer-par{
+        font-size: 17.5px;
+    }
+    
+    
+
+
+   
+}

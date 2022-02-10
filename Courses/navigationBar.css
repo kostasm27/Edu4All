@@ -1,0 +1,98 @@
+.NavigationBar{
+    background-color: whitesmoke;
+    padding: 5px;
+    margin: 0px;
+}
+
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+
+}
+
+nav img{
+    width: 75px;
+    height: 75px;
+    border-radius:50%;
+}
+
+.nav-bar ul li{
+    list-style: none;
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 1s;
+    padding: 20px;
+}
+
+.nav-bar ul li a{
+    text-decoration: none;
+    font-size: 25px;
+    color:#8a8a8a;
+    transition:  color 1s;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+
+}
+
+
+
+.nav-bar ul li:hover{
+
+    border-bottom: 2px solid black;
+}
+
+.nav-bar ul li a:hover{
+    color: black;
+}
+
+
+/*for tablet screens 600px and above*/
+ 
+@media screen and (max-width:768px) {
+
+    .nav-bar ul li a{
+        font-size: 20px;
+        
+    }
+}
+/* for large phones 375px and above */
+@media screen and (max-width:600px) {
+    
+    .nav-bar ul li a{
+        font-size: 13px;
+        
+    }
+
+    .nav-bar ul li{
+        padding: 10px;
+    }
+
+   nav img{
+        width: 50px;
+        height: 50px;
+        border-radius: 25%;
+    }
+}
+/*for smaller phones up to 375px*/
+@media screen and (max-width:375px){
+    nav{
+        display: block;
+        text-align: center;
+    }
+
+    .nav-bar ul li a{
+        font-size: 13px;
+        
+    }
+    .nav-bar ul li{
+        padding: 10px;
+    }
+    
+
+
+   
+}

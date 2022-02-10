@@ -1,0 +1,319 @@
+*{
+
+    margin: 0;
+    padding: 0;
+
+}
+
+.forgot{
+    height:max-content;
+    width: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(6, 19, 63, 0.5));
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    transition:0.5s;
+    box-shadow: inset 0px  2.5px  5px  black; 
+    
+}
+
+
+.form-box{
+    position: relative;
+    height: 550px;
+    width: 400px;
+    background:white;
+    margin: 10% auto;
+    box-shadow: 0px 0px 10px  black  ;
+        
+}
+
+.img-forgot{
+    padding-top: 25px ;
+    height: 75px;
+    width: 75px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.forgot-bar{
+    position: absolute;
+    top:110px;
+    width: 80%;
+    margin: 0 10%;
+
+}
+
+.forgot-header{ 
+    font-size: 23px;
+    margin-top: 5% ;
+    font-weight: 500;
+    color: grey;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    
+
+}
+
+.forgot-par{
+    font-size: 15px;
+    margin: 3% auto;
+    font-weight: 400;
+    color: black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+.forgot-cat{
+
+    text-align: center;
+    margin: 5% auto; 
+}
+
+.input-field{
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 1.5px solid black ;
+    outline:none;
+    margin:15px 0;
+    padding: 2% ;
+    height: 30px;
+    width: 85%;
+    font-size: 15px;
+    
+    
+}
+
+.submit-button{
+    width: 45%;
+    display:block;
+    border-radius: 15px;
+    padding:10px 40px;
+    margin: 10% auto;
+    background:white;
+    border:2px solid black ;
+    transition: 0.5s;
+    font-size: 15px;
+    
+
+}
+
+.submit-button:hover{
+    color: white;
+    background-color:black ;
+    cursor: pointer;
+    
+}
+
+.questions{
+    margin: 10% auto;
+}
+
+.questions-par{
+    font-size: 15px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.questions-email{
+    margin-top: 5%;
+    color: cornflowerblue;
+    text-align: center;
+}
+
+.footer{
+    position: relative;
+    text-align: center;
+    padding: 25px;
+    
+      
+}
+.footer-par{
+    color: white;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*for tablet screens 600px and above*/
+
+@media screen and (max-width:768px)  {
+    .forgot{
+        height: max-content;
+    }
+
+    .form-box{
+        margin: 20% auto;
+    }
+
+    .forgot-bar{
+        top: 100px;
+    }
+
+    .forgot-header{
+        font-size: 25px;
+
+    }
+
+    .forgot-par{
+        font-size: 17.5px;
+    }
+    
+    .input-field{
+        font-size: 17.5px;
+    }
+    .submit-button{
+        width: 50%;
+        font-size: 17.5px;
+
+    }
+
+    .questions{
+        margin: 0% auto;
+    }
+
+    .questions-par{
+        font-size: 17.5px;
+    }
+    .questions-email{
+        font-size: 17.5px;
+    }
+
+
+
+}
+
+/* for large phones 400px and above*/
+
+@media screen and (max-width:600px)  {
+    .forgot{
+        height: max-content;
+    }
+
+    .form-box{
+        margin: 30% auto;
+        width: 400px;
+        height: 500px;
+    }
+    .forgot-bar{
+        top: 100px;
+    }
+
+    .forgot-header{
+        font-size: 20px;
+
+    }
+
+    .forgot-par{
+        font-size: 13.5px;
+    }
+    
+    .input-field{
+        font-size: 13px;
+    }
+    .submit-button{
+        width: 45%;
+        font-size: 15px;
+
+    }
+
+    .questions{
+        margin: 0% auto;
+    }
+
+    .questions-par{
+        font-size: 13px;
+    }
+    .questions-email{
+        font-size: 15px;
+    }
+
+    .footer{
+        padding: 15px;
+    }
+
+    .footer-par{
+        font-size: 20px;
+    }
+}
+
+/*for smaller phones up to 400px*/
+
+@media screen and (max-width:400px) {
+
+    .forgot{
+        height: max-content;
+    }
+
+    .form-box{
+        margin: 30% auto;
+        width: 100%;
+        height: 500px;
+    }
+
+    .img-forgot{
+        height: 50px;
+        width: 50px;
+        padding-top: 30px;
+    }
+
+    .forgot-bar{
+        top: 100px;
+    }
+
+    .forgot-header{
+        font-size: 17.5px;
+
+    }
+
+    .forgot-par{
+        font-size: 12.5px;
+    }
+    
+    .input-field{
+        font-size: 13px;
+    }
+    .submit-button{
+        width: 60%;
+        font-size: 15px;
+
+    }
+
+    .questions{
+        margin: 10% auto;
+    }
+
+    .questions-par{
+        font-size: 13px;
+    }
+    .questions-email{
+        font-size: 15px;
+    }
+
+    .footer{
+        padding: 15px;
+    }
+
+    .footer-par{
+        font-size: 17.5px;
+    }
+    
+
+
+}
+
+
+
+
+ 
+
+
+
+

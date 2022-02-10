@@ -1,0 +1,187 @@
+/*Footer*/
+.Last_section {
+    background: linear-gradient(to right, #12233a, #12233a);
+    padding: 50px 0px 20px 0px;
+    color: white;
+  }
+  
+  .conteiner {
+    padding-right: 15px;
+    padding-left: 15px;
+    display: flex;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+  
+  .Last_section .footer-col .About_us,
+  .paraforUs,
+  .H5-Guide,
+  .PSPI,
+  .Contact,
+  .details a {
+    font-family: "Raleway", sans-serif;
+  }
+  
+  .footer-col {
+    flex-basis: 45%;
+    border-radius: 12px;
+    padding: 6px 4px;
+    margin-bottom: 20px;
+    margin-left: 8px;
+    margin-right: 5%;
+    height: 170px;
+    box-sizing: border-box;
+  }
+  
+  .footer-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0);
+  }
+  
+  .About_us {
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
+    padding: 6px;
+  }
+  .paraforUs {
+    font-size: 14px;
+    font-weight: 400;
+    width: 70%;
+    margin-left: 50px;
+    text-align: center;
+  }
+  .footer-row {
+    display: contents;
+  }
+  .Media-icons {
+    position: relative;
+    text-align: start;
+    margin-left: 18%;
+  }
+  
+  .Guide {
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    top: 20%;
+  }
+  
+  .H5-Guide {
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    margin-top: -5%;
+    padding: 10px;
+  }
+  
+  .Guide-for {
+    font-size: 17px;
+    font-weight: 400;
+    font-family: "Raleway", sans-serif;
+  }
+  
+  .For {
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+  }
+  
+  .footer-col .Contact,
+  .footer-col .details a {
+    margin-top: -2%;
+  }
+  
+  .Contact {
+    font-weight: 300;
+    margin-top: -8%;
+    font-size: 18px;
+    text-align: center;
+    padding: 15px 15px 6px 15px;
+  }
+  .details a {
+    text-align: center;
+    position: relative;
+    text-decoration-line: none;
+    color: white;
+    left: 35%;
+    font-size: 14px;
+    font-weight: 200;
+  }
+  
+  .PSPI {
+    text-align: center;
+    position: relative;
+    right: 12%;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 200;
+  }
+  .icon {
+    text-align: start;
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+  }
+  
+  .icon a {
+    color: white;
+    text-decoration-line: none;
+  }
+
+
+
+  @media only screen and (max-width: 1250px) {
+
+    .paraforUs {
+      margin-left: 10%;
+    }
+    .details a {
+      margin-left: 6%;
+    }
+    .H5-Guide{
+      margin-top: -2px;
+    }
+    .conteiner {
+      display: inline-block;
+      justify-content: space-between;
+      padding: 10px;
+      width: 100%;
+      margin-left: 10px;
+      height: fit-content;
+    }
+    .footer-col .Guide {
+      padding: 20px;
+    }
+    .Media-icons .icon {
+      text-align: center;
+      right: 12%;
+    }
+  }
+  
+  @media only screen and (max-width: 550px) {
+    * {
+      overflow-x: hidden;
+    }
+    .details a {
+      margin-left: 2%;
+    }
+    .conteiner {
+      display: inline-block;
+      justify-content: space-between;
+      padding: 10px;
+      width: 100%;
+      margin-left: 10px;
+      height: fit-content;
+    }
+    .footer-col .Guide {
+      padding: 20px;
+    }
+  }
+  
+  @media only screen and (max-width: 375px) {
+  
+    .details a{
+      left: 65px;
+    }
+  }
+  

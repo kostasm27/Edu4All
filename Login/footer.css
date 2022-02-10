@@ -1,0 +1,166 @@
+.footer-container{
+    position: absolute;
+    top:969px;
+    width: 100%;
+    
+    
+}
+
+.footer-items-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    bottom: 0%;
+}
+.footer-item-wrapper{
+    position: relative;
+}
+
+.footer-img-background{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 100%;
+    
+}
+
+.inside{
+    position:absolute;
+    height: 100%;
+    width:100%;
+    top:0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    
+    
+}
+.inside .info-par , .inside .details{
+    transition:1s;
+    color:transparent;
+    font-weight: 600;
+    font-size: 17.5px;
+    padding: 20px auto;
+}
+
+
+.info-header{
+    font-size: 60px;
+    font-family: Rockwell, “Courier Bold”, Courier, Georgia, Times, “Times New Roman”, serif;
+    text-align: center;
+    color:black;
+}
+.info-par{
+    width: 50%;
+    margin: 0% 25%;
+}
+
+.image-dark{
+    transition:1s;
+    filter: brightness(10%);
+    
+}
+
+.inside:hover  .info-par , .inside:hover  .info-header , .inside:hover .details {
+    color:white;
+    font-weight: 600;
+
+}
+
+
+
+
+/*for tablet screens 600px and above*/
+
+@media screen and (max-width:768px)  {
+    
+   .footer-container{
+       top: 829px;
+   }
+
+   .footer-items-wrapper{
+    display: grid;
+    grid-template-columns: 1fr ;
+    bottom: 0%;
+    }
+    
+
+   .footer-img-background{
+       height: 250px;
+   }
+
+   .info-header{
+       font-size: 37.5px;
+   }
+
+   .inside .info-par , .inside .details{
+       font-size: 17.5px;
+       padding-bottom: 15px;
+   }
+   
+}
+
+/* for large phones 375px and above*/
+
+@media screen and (max-width:600px) {
+
+    .footer-container{
+        top: 780px;
+    }
+ 
+    .footer-items-wrapper{
+     display: grid;
+     grid-template-columns: 1fr ;
+     bottom: 0%;
+     }
+     
+ 
+    .footer-img-background{
+        height: 250px;
+    }
+ 
+    .info-header{
+        font-size: 30px;
+    }
+ 
+    .inside .info-par , .inside .details{
+        font-size: 15px;
+        padding-bottom: 10px;
+    }
+
+    
+}
+
+/*for smaller phones up to 375px*/
+
+@media screen and (max-width:375px) {
+
+    .footer-container{
+        top: 830px;
+    }
+ 
+    .footer-items-wrapper{
+     display: grid;
+     grid-template-columns: 1fr ;
+     bottom: 0%;
+     }
+     
+ 
+    .footer-img-background{
+        height: 225px;
+    }
+ 
+    .info-header{
+        font-size: 30px;
+    }
+ 
+    .inside .info-par , .inside .details{
+        font-size: 12.5px;
+        padding-bottom: 20px;
+    }
+
+}
+
+
+

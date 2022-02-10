@@ -1,0 +1,271 @@
+*{
+    box-sizing: border-box;     
+}
+
+.calendar{
+   
+    width: 25vw;
+    height: max-content;
+    background-color: white;
+    margin: 10% auto;
+    border-radius: 5px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4);
+}
+
+.month{
+    width:100%;
+    height: 15vh;
+    background-color: gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 0 1vw;
+    border-radius: 5px;
+    
+
+}
+
+.month i{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.month h1{
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    margin-bottom: 1.5vh;
+}
+
+.month p{
+    font-size: 17.5px;
+}
+.weekdays{
+    width: 100%;
+    height: 6.25vh;
+    display: flex;
+    align-items: center;
+    padding: 0 0.75vw;
+}
+
+.weekdays div {
+    font-size: 17.5px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    width: calc( 25vw / 7);
+    margin: 0.35vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.days {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.35vw;
+}
+
+.days div{
+    font-size: 20px;
+    margin: 1.5vh 0.15vw;
+    width: calc( 25vw / 8);
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s;
+}
+
+.days div:hover:not(.today){
+    background-color: gray;
+    cursor: pointer;
+}
+  
+.prev-date,
+.next-date{
+    opacity: 0.5;
+}
+  
+.today{
+    background-color: gray;
+}
+
+
+
+/*for laptop screens  up to 1024px*/
+
+@media screen and (max-width:1024px)  and (min-width:769px){
+    .calendar{
+        width: 45vw;
+    }
+
+    .month h1{
+        font-size: 30px;
+    }
+
+    .month p{
+        font-size: 20px;
+    }
+
+    .weekdays div {
+        letter-spacing: 1px;
+        width: calc( 45vw / 7);
+    }
+    .days div{
+        font-size: 20px;
+        margin: 1.5vh 0.3vw;
+        width: calc( 45vw / 8);
+    }
+}
+
+
+
+
+/*for tablet screens 600px and above*/
+
+@media screen and (max-width:768px) {
+    .calendar{
+        width: 45vw;
+    }
+
+    .month h1{
+        font-size: 27.5px;
+    }
+
+    .month p{
+        font-size: 17.5px;
+    }
+
+    .weekdays div {
+        letter-spacing: 1px;
+        width: calc( 45vw / 7);
+    }
+    .days div{
+        font-size: 17.5px;
+        margin: 1.5vh 0.3vw;
+        width: calc( 45vw/ 8);
+    }
+}
+
+/* for large phones 375px and above*/
+
+@media screen and (max-width:600px)  {
+    .calendar{
+        width: 70vw;
+    }
+
+
+    .month h1{
+        font-size: 25px;
+        letter-spacing: 2px;
+    }
+    .month p{
+        font-size: 15px;
+    }
+
+    .weekdays{
+        padding: 0 0.35vw;
+    }
+
+    .weekdays div {
+        font-size: 15px;
+        letter-spacing: 2px;
+        width: calc( 70vw / 7);
+        margin: 5px;
+       
+    }
+
+    .days div{
+        margin: 1.5vh 0.5vw;
+        width: calc( 70vw / 8);
+        height: 3.15vh;
+        font-size: 15px;
+    }
+
+}
+
+/*for medium phones up to 375px*/
+
+@media screen and (max-width:375px)  {
+    
+    .calendar{
+        width: 80vw;
+    }
+    .month h1{
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+    .month p{
+        font-size: 12.5px;
+    }
+
+    .weekdays{
+        padding: 0 0.15vw;
+    }
+
+    .weekdays div {
+        font-size: 12.5px;
+        letter-spacing: 2px;
+        width: calc( 80vw/ 7);
+        margin: 0.35vw;
+    }
+    
+    .days div{
+        margin: 1.5vh 0.6vw;
+        width: calc( 80vw / 8);
+        height: 2.25vh;
+        font-size: 12.5px;
+    }
+
+}
+
+
+
+
+/*for smaller phones up to 325px*/
+
+@media screen and (max-width:325px)  {
+    
+    .calendar{
+        width: 80vw;
+    }
+
+    .month h1{
+        font-size: 22.5px;
+        letter-spacing: 2px;
+    }
+    .month p{
+        font-size: 12.5px;
+    }
+
+    .weekdays{
+        padding: 0 0.2vw;
+    }
+
+    .weekdays div {
+        font-size: 12.5px;
+        letter-spacing: 2px;
+        width: calc( 80vw / 7);
+        margin: 0.35vw;
+    }
+    
+    .days div{
+        margin: 1.5vh 2px;
+        width: calc( 80vw / 8);
+        height: 2.5vh;
+        font-size: 12.5px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
